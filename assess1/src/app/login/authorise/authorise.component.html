@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+      <table class="table">
+          <thead class="thead-inverse">
+          <tr>
+              <th class="text-center">User ID</th>
+              <th class="text-center"><input type="text" id="uid" [(ngModel)]="userId" required></th> 
+          </tr>
+          </thead>
+          <thead class="thead-inverse">
+            <tr>
+                <th class="text-center">ID</th>
+                <th class="text-center"><input type="password" id="id" [(ngModel)]="id" required></th> 
+            </tr>
+            </thead>
+          <tbody>
+          <input type="submit" value="Submit" (click)="submit()">
+          </tbody>
+      </table>
+  </div>
+</div>

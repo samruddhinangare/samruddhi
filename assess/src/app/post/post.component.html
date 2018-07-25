@@ -1,0 +1,27 @@
+<div align="right"><a href="">Logout</a></div>
+<p >{{_postsArray.length}} posts</p>
+
+<div>
+    <tr></tr>
+    <tr></tr>
+</div>
+<div class="container">
+  <div class="row">
+      <table class="table table-bordered table-stripped">
+          <thead class="thead-inverse">
+          <tr>
+              <th class="text-center">Heading</th>
+              <th class="text-center">Sub Heading</th>
+              
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let post of _postsArray" >
+              <td class="text-center" style="width: 5000px;"  (click)="DisplayData(post)">{{post.name}}</td>
+              <td class="text-center" style="width: 2500px;"  (click)="DisplayData(post)">{{post.email}}</td> 
+          </tr>
+          </tbody>
+      </table>
+  </div>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,28 @@
+<div class="container">
+    <div align="right"><a href="">Logout</a></div>
+  <div class="row">
+      <table class="table">
+          <thead class="thead-inverse">
+              <tr>
+              <th class="text-center">Heading</th><br>
+              <td class="text-center" >{{post.name}}</td>
+          </tr>
+          <tr>
+            <th class="text-center">Sub Heading</th><br>
+            <td class="text-center" >{{post.email}}</td>
+          </tr>
+          
+          <tr >
+              
+            <th class="text-center">Body</th><br>
+              <td class="text-center">{{post.body}}</td>
+          </tr>
+          </thead>
+          <tbody>
+              <tr align="center">
+                  <td align="text-center" ><input type="button" value="Back" (click)="navigateBack()"></td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+</div>
